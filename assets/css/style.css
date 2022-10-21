@@ -1,74 +1,73 @@
+@font-face {
+  font-family: 'Franklin Gothic';
+  src: url('../fonts/franklin-gothic-medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Franklin Gothic";
-  src: url("../fonts/franklin-gothic-medium.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  margin: 0;
+  min-height: 100vh;
+  font-family: 'Franklin Gothic', Arial, Helvetica, sans-serif;
   background-color: #141b23;
-  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
-  background-image: url(../img/bitmap.jpg);
+  color: #ffffff;
+  background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-position: 100% 0;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.65));
+  background-size: 60%;
+  line-height: 1.2;
 }
 
-/* typography */
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .container {
-  padding: 0 20px;
-  margin: 0 auto;
-  max-width: 940px;
+  width: min(100% - 40px, 890px);
+  margin-inline: auto;
 }
 
-/* header */
+.header {
+  padding-top: 62px;
+  margin-bottom: 64px;
+}
+
 .navbar {
-  opacity: 0.87;
-  margin-top: 63px;
-  margin-bottom: 77px;
+  color: #b1bbcbde;
+  text-shadow: 0px 0px 4px #000000a6;
   font-size: 15px;
-  line-height: 20px;
+
+  display: flex;
+  gap: 15px;
 }
 
-.navbar-item {
-  color: #b1bbcb;
-  margin-right: 20px;
+.navbar__item {
+  /* margin-right: 15px; */
 }
 
-/* main */
-.content {
-  margin-left: 45px;
-  max-width: 474px;
-  color: #ffffff;
+.article {
+  max-width: 475px;
+  margin-left: 41px;
+  margin-bottom: 197px;
 }
 
-.content-title {
+.article__title {
   font-size: 25px;
-  line-height: 30px;
+  text-shadow: 0 0px 4px #000000a6;
+  font-weight: normal;
 }
 
-.content-descripttion {
+.article__content {
   font-size: 13px;
-  line-height: 16px;
 }
 
-/* footer */
 .footer {
-  margin-top: 190px;
-}
-
-.copy {
-  opacity: 0.27;
+  color: #ffffff45;
+  text-shadow: 0 0px 4px #000000a6;
   font-size: 12px;
-  line-height: 14px;
-  color: #ffffff;
 }
